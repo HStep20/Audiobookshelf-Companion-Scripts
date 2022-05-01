@@ -79,9 +79,7 @@ def parse_abs_metadata_to_id3(all_books):
 
 root = Tk()
 root.withdraw()
-folder_selected = '\\\\TOWER\\Media\\Audio\\Audiobooks\\Unsorted Audiobooks\\Tag Testing\\Alec Hutson'
-#folder_selected = '\\\\TOWER\\Media\\Audio\\Audiobooks\\Unsorted Audiobooks\\Beeg jobs\\Robin Hobb'
-#folder_selected = filedialog.askdirectory()
+folder_selected = filedialog.askdirectory()
 
 all_books = collect_all_media_files(folder_selected)
 all_books = parse_abs_metadata_to_id3(all_books)
